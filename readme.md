@@ -1,6 +1,6 @@
-## PUDBA
-
+### PUDBA
 Polarforge Universal Database Backup Assistant is a self-contained web UI for creating and managing MySQL/MariaDB backups using native tools, with support for gzip compression, retention pruning, restore support, and basic job management.
+
 ---
 
 ### Backup and Restore
