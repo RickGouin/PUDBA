@@ -1,8 +1,6 @@
 ### PUDBA
 Polarforge Universal Database Backup Assistant is a self-contained web UI for creating and managing MySQL/MariaDB backups using native tools, with support for gzip compression, retention pruning, restore support, and basic job management.
 
----
-
 ### Backup and Restore
 - Create full database backups or backups limited to selected tables.
 - Uses `mysqldump` (or `mariadb-dump` if available).
@@ -19,26 +17,16 @@ Polarforge Universal Database Backup Assistant is a self-contained web UI for cr
 - Download/restore path traversal protection.
 - Command logging with password masking (password passed via `MYSQL_PWD`).
 
----
-
 ## Requirements
-
-### Runtime
 - PHP running under a web server.
 - PHP CLI for cron and CLI usage.
-
-### PHP configuration
 - Sessions enabled.
 - `proc_open` enabled.
 - File write access to configured directories.
-
-### System binaries
 - `mysqldump` or `mariadb-dump`
 - `mysql` or `mariadb`
 - `gzip` / `gunzip` (optional)
 - `crontab` (for cron features)
-
----
 
 ## Installation
 
@@ -47,8 +35,6 @@ Polarforge Universal Database Backup Assistant is a self-contained web UI for cr
 4. Complete initial authentication setup.
 5. Add database connections via the UI.
 6. Optionally configure backup jobs.
-
----
 
 ## Usage (Web UI)
 
@@ -68,8 +54,6 @@ Polarforge Universal Database Backup Assistant is a self-contained web UI for cr
 - Jobs are tagged and managed automatically.
 - Jobs can be run or deleted from the UI.
 
----
-
 ## FAQ
 
 **Where are backups stored?**  
@@ -83,8 +67,6 @@ Your host or server may restrict crontab usage.
 
 **Does this support other databases?**  
 Today, there is support for MySQL and MariaDB only.
-
----
 
 ## License
 
